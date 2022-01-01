@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>YT Clipper</title>
+</head>
+
+<body>
+    <div class="main" id="main">
+        <div class="main-content">
+            <h1>YT Clipper</h1>
+            <h3>Download YouTube trimmed videos in just <span class="highlight">few clicks!</span></h3>
+            <div class="url-input-loading">
+                <div class="url-input">
+                    <input type="text" class="url" id="url" placeholder="Enter your YouTube URL here">
+                    <button class="search" id="search">Search</button>
+                </div>
+                <div class="loading-ring" id="loadingRing"></div>
+            </div>
+            <div class="error" id="error">
+                Error:
+            </div>
+        </div>
+    </div>
+    <div class="edit" id="edit">
+        <div class="video-preview">
+            <div class="iframe-wrapper" id="iframeWrapper">
+            </div>
+            <div class="description">
+                <h3 id="title">Title</h3>
+                <p id="channelName">Channel Name</p>
+            </div>
+        </div>
+        <div class="settings">
+            <h2>YT Clipper</h2>
+            <div class="time-wrapper">
+                <div>
+                    <p>Start Time:</p>
+                    <input type="text" class="time-input" id="startTime" placeholder="hh:mm:ss" value="00:00:00">
+                </div>
+                <div>
+                    <p>End Time:</p>
+                    <input type="text" class="time-input" id="endTime" placeholder="hh:mm:ss">
+                </div>
+            </div>
+            <button id="process">Process!</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

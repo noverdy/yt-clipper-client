@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <title>YT Clipper</title>
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h2>Your video is being processed!</h2><br>
+        <h3>Don't leave this page while we process your video. It takes around 2-5 minutes.</h3>
+    </div>
+    <div class="content">
+        <div class="loading-ring" id="loadingRing" style="opacity: 100%;"></div>
+        <h2 id="doneMessage" style="display: none">Processing done!</h2>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/process.js"></script>
+</body>
+
+</html>
